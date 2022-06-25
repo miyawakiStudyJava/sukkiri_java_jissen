@@ -5,8 +5,31 @@
 - equals()
 - toString()
 - hashCode()
+- java.lang.Comparableインターフェース　＞＞　compareToメソッドをオーバーライド
+- java.util.Comparatorインターフェース　＞＞　comppareメソッドをオーバーライド（比較するクラスを実装時に<>指定）
+
+```java
+//compareTo
+
+
+```
 
 2章 さまざまな種類のクラス
+共変性
+```java
+//型ワイルドカード
+Pocket<?>;
+
+//Tか、その子孫クラス
+Pocket<? extends T>;
+
+//Tか、その先祖クラス
+Pocket<? super T>;
+
+//ジェネリックメソッド
+//アクセス修飾子 static <T> List<T> asList(T... a)
+//メソッド内の処理にも借り方引数を記述できるようになる
+```
 3章 関数とラムダ式
 4章 JVM制御とリフレクション
 5章 非標準ライブラリの活用
